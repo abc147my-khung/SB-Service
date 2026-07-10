@@ -10,7 +10,7 @@ const DATA_DIR = path.join(ROOT, "data");
 const STORE_FILE = path.join(DATA_DIR, "store.json");
 const INITIAL_CREDENTIALS_FILE = path.join(DATA_DIR, "initial-admin.txt");
 const PORT = Number(process.env.PORT || 3000);
-const HOST = process.env.HOST || "127.0.0.1";
+const HOST = process.env.HOST || "0.0.0.0";
 const SESSION_TTL_MS = 8 * 60 * 60 * 1000;
 
 const sessions = new Map();
