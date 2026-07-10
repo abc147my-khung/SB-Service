@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ปรับ Title ให้ดึงตามบริบทได้ หรือจะใส่แบบนี้ไว้ก็ได้ครับ -->
+    <title>S&B Electronic Service จังหวัดยโสธร | จำหน่ายตู้น้ำหยอดเหรียญ ตู้น้ำมันหยอดเหรียญ เครื่องซักผ้าหยอดเหรียญ เครื่องอบผ้า ร้านสะดวกซัก</title>
+    <meta name="description" content="S&B Service จังหวัดยโสธร จำหน่ายและติดตั้งตู้น้ำหยอดเหรียญ ตู้น้ำมันหยอดเหรียญ เครื่องซักผ้าหยอดเหรียญ เครื่องอบผ้า ร้านสะดวกซัก ตู้เติมเงิน และอุปกรณ์ธุรกิจหยอดเหรียญครบวงจร">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+        body { font-family: 'Prompt', 'Inter', sans-serif; background-color: #f8fafc; scroll-behavior: smooth; }
+        .hover-scale { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .hover-scale:hover { transform: translateY(-4px); box-shadow: 0 12px 24px -10px rgba(5, 150, 105, 0.3); }
+        .glass-panel { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.2); }
+        @media (min-width: 1024px) { .dropdown-hover:hover .dropdown-menu { display: block; animation: fadeIn 0.2s ease-out; } }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { brand: { deep: '#0f172a', navy: '#1e3a8a', blue: '#3b82f6', emerald: '#059669', mint: '#10b981', teal: '#0d9488', gold: '#f59e0b' } }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="text-slate-800 antialiased min-h-screen flex flex-col">
+
+    <!-- Premium Header Area -->
+    <div id="shared-header"></div>
+
+    <!-- ส่วนเนื้อหาหลัก: กำหนดข้อมูลจังหวัดและที่ตรงนี้ -->
+<div id="shared-branch-content" 
+         data-province="ยโสธร" 
+         data-location="ในพื้นที่จังหวัดยโสธรและใกล้เคียง"
+         data-specific-zone="สำหรับลูกค้าในตัวเมืองยโสธร">
+         <!-- JS จะนำเนื้อหาหลักมาเขียนลงตรงนี้โดยอัตโนมัติ -->
+    </div>
+<!-- Premium Footer Area -->
+<div id="shared-footer"></div>
+
+    <!-- Script ควบคุมการคำนวณกำไรและเมนู -->
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                icon.className = 'fa-solid fa-xmark text-xl';
+            } else {
+                menu.classList.add('hidden');
+                icon.className = 'fa-solid fa-bars text-xl';
+            }
+        }
+    </script>
+    <!-- เรียกใช้ไฟล์ Shared Layout -->
+    <script src="shared-layout.js"></script>
+</body>
+</html>

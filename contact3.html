@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ศูนย์บริการต่างจังหวัด | S&B Electronic Service</title>
+    <meta name="description" content="S&B Service จังหวัดด้านขวาเพื่อดูข้อมูลการติดต่อและสาขาย่อย จำหน่ายและติดตั้งตู้น้ำหยอดเหรียญ ตู้น้ำมันหยอดเหรียญ เครื่องซักผ้าหยอดเหรียญ เครื่องอบผ้า ร้านสะดวกซัก ตู้เติมเงิน และอุปกรณ์ธุรกิจหยอดเหรียญครบวงจร">
+    
+    <!-- Tailwind CSS for Modern & Responsive Layouts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts: Prompt & Inter for high-end typography -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Prompt', 'Inter', sans-serif;
+            background-color: #f8fafc;
+            scroll-behavior: smooth;
+        }
+
+        /* Smooth Custom Transitions */
+        .hover-scale {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .hover-scale:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px -10px rgba(5, 150, 105, 0.3);
+        }
+
+        /* Glassmorphism utility */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Standard Dropdown Custom Styles for Desktop */
+        @media (min-width: 1024px) {
+            .dropdown-hover:hover .dropdown-menu {
+                display: block;
+                animation: fadeIn 0.2s ease-out;
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            deep: '#0f172a',
+                            navy: '#1e3a8a',
+                            blue: '#3b82f6',
+                            emerald: '#059669',
+                            mint: '#10b981',
+                            teal: '#0d9488',
+                            gold: '#f59e0b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="text-slate-800 antialiased min-h-screen flex flex-col">
+
+    <!-- Premium Header Area -->
+    <div id="shared-header"></div>
+
+    <!-- Main Content Area -->
+    <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-12 flex-grow">
+        
+        <!-- Header Section -->
+        <div class="mb-8 space-y-2">
+            <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wider bg-emerald-500/10 text-emerald-600 border border-emerald-500/20 uppercase">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> ครอบคลุมทั่วไทย 30 จังหวัด
+            </span>
+            <h2 class="text-3xl sm:text-4xl font-black text-slate-800">ศูนย์บริการต่างจังหวัด</h2>
+        </div>
+
+        <!-- Main Card Section -->
+        <div class="bg-white p-6 sm:p-8 md:p-10 rounded-3xl shadow-lg border border-slate-100">
+            
+            <p class="text-base sm:text-lg text-slate-600 mb-8 leading-relaxed max-w-3xl">
+                เรามีตัวแทนจำหน่ายและศูนย์บริการที่ได้มาตรฐานพร้อมทีมช่างดูแลในทุกภูมิภาค <br>
+                หากมีข้อสงสัยหรือต้องการรับบริการด่วน สามารถติดต่อสอบถามสาขาที่ใกล้ที่สุดได้<br>
+                ที่เบอร์หลักเบอร์เดียวทั่วไทย <a href="tel:0849125571" class="text-emerald-600 font-bold hover:underline"><i class="fa-solid fa-phone"></i> 084-912-5571</a>
+            </p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Left Column: Map Image -->
+                <div class="lg:col-span-5 xl:col-span-4 space-y-4">
+                    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 shadow-sm">
+                    <a href="contact3.html"><img src="Images/map.png" alt="แผนที่แสดงศูนย์บริการรายจังหวัด" class="w-full h-auto rounded-xl shadow-md object-cover transition-transform duration-300 hover:scale-[1.02]"></a> </div>
+                    <div class="bg-emerald-50 border border-emerald-100 rounded-xl p-4 text-center">
+                        <p class="text-xs text-emerald-800 font-medium">
+                            <i class="fa-solid fa-circle-info mr-1 text-emerald-600"></i> คลิกเลือกจังหวัดด้านขวาเพื่อดูข้อมูลการติดต่อและสาขาย่อย
+                        </p>
+                    </div>
+              </div>
+
+                <!-- Right Column: Interactive Buttons Grid -->
+                <div class="lg:col-span-7 xl:col-span-8">
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-map-location-dot text-slate-400"></i> กรุณาเลือกจังหวัดใกล้บ้านคุณ
+                    </h3>
+
+                    <!-- Responsive Button Grid -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-3">
+                        <a href="index002.html" class="flex items-center gap-2.5 bg-slate-50 hover:bg-emerald-600 text-slate-700 hover:text-white font-semibold px-4 py-3 rounded-xl border border-slate-150 hover:border-emerald-600 transition-all hover:-translate-y-0.5 shadow-sm text-sm sm:text-base">
+                            <i class="fa-solid fa-location-dot text-emerald-500 group-hover:text-white shrink-0"></i>
+                            <span class="truncate">อุดรธานี</span>
+                        </a>
+                        <a href="index003.html" class="flex items-center gap-2.5 bg-slate-50 hover:bg-emerald-600 text-slate-700 hover:text-white font-semibold px-4 py-3 rounded-xl border border-slate-150 hover:border-emerald-600 transition-all hover:-translate-y-0.5 shadow-sm text-sm sm:text-base">
+                            <i class="fa-solid fa-location-dot text-emerald-500 shrink-0"></i>
+                            <span class="truncate">เลย</span>
+                        </a>
+                        <a href="index004.html" class="flex items-center gap-2.5 bg-slate-50 hover:bg-emerald-600 text-slate-700 hover:text-white font-semibold px-4 py-3 rounded-xl border border-slate-150 hover:border-emerald-600 transition-all hover:-translate-y-0.5 shadow-sm text-sm sm:text-base">
+                            <i class="fa-solid fa-location-dot text-emerald-500 shrink-0"></i>
+                            <span class="truncate">บุรีรัมย์</span>
+                        </a>
+                        <a href="index005.html" class="flex items-center gap-2.5 bg-slate-50 hover:bg-emerald-600 text-slate-700 hover:text-white font-semibold px-4 py-3 rounded-xl border border-slate-150 hover:border-emerald-600 transition-all hover:-translate-y-0.5 shadow-sm text-sm sm:text-base">
+                            <i class="fa-solid fa-location-dot text-emerald-500 shrink-0"></i>
+                            <span class="truncate">ศรีสะเกษ</span>
+                        </a>
+                        <a href="index006.html" class="flex items-center gap-2.5 bg-slate-50 hover:bg-emerald-600 text-slate-700 hover:text-white font-semibold px-4 py-3 rounded-xl border border-slate-150 hover:border-emerald-600 transition-all hover:-translate-y-0.5 shadow-sm text-sm sm:text-base">
+                            <i class="fa-solid fa-location-dot text-emerald-500 shrink-0"></i>
+                            <span class="truncate">อุบลราชธานี</span>
+                        </a>
+                        <a href="index007.html" class="flex items-center gap-2.5 bg-slate-50 hover:bg-emerald-600 text-slate-700 hover:text-white font-semibold px-4 py-3 rounded-xl border border-slate-150 hover:border-emerald-600 transition-all hover:-translate-y-0.5 shadow-sm text-sm sm:text-base">
+                            <i class="fa-solid fa-location-dot text-emerald-500 shrink-0"></i>
+                            <span class="truncate">นครพนม</span>
+                        </a>
+                        <a href="index008.html" class="flex items-center gap-2.5 bg-slate-50 hover:bg-emerald-600 text-slate-700 hover:text-white font-semibold px-4 py-3 rounded-xl border border-slate-150 hover:border-emerald-600 transition-all hover:-translate-y-0.5 shadow-sm text-sm sm:text-base">
+                            <i class="fa-solid fa-location-dot text-emerald-500 shrink-0"></i>
+                            <span class="truncate">ยโสธร</span>
+                        </a>
+                        <a href="index009.html" class="flex items-center gap-2.5 bg-slate-50 hover:bg-emerald-600 text-slate-700 hover:text-white font-semibold px-4 py-3 rounded-xl border border-slate-150 hover:border-emerald-600 transition-all hover:-translate-y-0.5 shadow-sm text-sm sm:text-base">
+                            <i class="fa-solid fa-location-dot text-emerald-500 shrink-0"></i>
+                            <span class="truncate">มหาสารคาม</span>
+                        </a>
+                        <a href="index010.html" class="flex items-center gap-2.5 bg-slate-50 hover:bg-emerald-600 text-slate-700 hover:text-white font-semibold px-4 py-3 rounded-xl border border-slate-150 hover:border-emerald-600 transition-all hover:-translate-y-0.5 shadow-sm text-sm sm:text-base">
+                            <i class="fa-solid fa-location-dot text-emerald-500 shrink-0"></i>
+                            <span class="truncate">ขอนแก่น</span>
+                        </a>
+                        <a href="index011.html" class="flex items-center gap-2.5 bg-slate-50 hover:bg-emerald-600 text-slate-700 hover:text-white font-semibold px-4 py-3 rounded-xl border border-slate-150 hover:border-emerald-600 transition-all hover:-translate-y-0.5 shadow-sm text-sm sm:text-base">
+                            <i class="fa-solid fa-location-dot text-emerald-500 shrink-0"></i>
+                            <span class="truncate">นครราชสีมา</span>
+                        </a>
+                        <a href="index012.html" class="flex items-center gap-2.5 bg-slate-50 hover:bg-emerald-600 text-slate-700 hover:text-white font-semibold px-4 py-3 rounded-xl border border-slate-150 hover:border-emerald-600 transition-all hover:-translate-y-0.5 shadow-sm text-sm sm:text-base">
+                            <i class="fa-solid fa-location-dot text-emerald-500 shrink-0"></i>
+                            <span class="truncate">อำนาจเจริญ</span>
+                        </a>
+                        <a href="index013.html" class="flex items-center gap-2.5 bg-slate-50 hover:bg-emerald-600 text-slate-700 hover:text-white font-semibold px-4 py-3 rounded-xl border border-slate-150 hover:border-emerald-600 transition-all hover:-translate-y-0.5 shadow-sm text-sm sm:text-base">
+                            <i class="fa-solid fa-location-dot text-emerald-500 shrink-0"></i>
+                            <span class="truncate">เพชรบุรี</span>
+                        </a>
+                        <a href="index014.html" class="flex items-center gap-2.5 bg-slate-50 hover:bg-emerald-600 text-slate-700 hover:text-white font-semibold px-4 py-3 rounded-xl border border-slate-150 hover:border-emerald-600 transition-all hover:-translate-y-0.5 shadow-sm text-sm sm:text-base">
+                            <i class="fa-solid fa-location-dot text-emerald-500 shrink-0"></i>
+                            <span class="truncate">ประจวบคีรีขันธ์</span>
+                        </a>
+                        <a href="index015.html" class="flex items-center gap-2.5 bg-slate-50 hover:bg-emerald-600 text-slate-700 hover:text-white font-semibold px-4 py-3 rounded-xl border border-slate-150 hover:border-emerald-600 transition-all hover:-translate-y-0.5 shadow-sm text-sm sm:text-base">
+                            <i class="fa-solid fa-location-dot text-emerald-500 shrink-0"></i>
+                            <span class="truncate">พัทลุง</span>
+                        </a>
+                        <a href="index016.html" class="flex items-center gap-2.5 bg-slate-50 hover:bg-emerald-600 text-slate-700 hover:text-white font-semibold px-4 py-3 rounded-xl border border-slate-150 hover:border-emerald-600 transition-all hover:-translate-y-0.5 shadow-sm text-sm sm:text-base">
+                            <i class="fa-solid fa-location-dot text-emerald-500 shrink-0"></i>
+                            <span class="truncate">สงขลา</span>
+                        </a>
+                        <a href="index017.html" class="flex items-center gap-2.5 bg-slate-50 hover:bg-emerald-600 text-slate-700 hover:text-white font-semibold px-4 py-3 rounded-xl border border-slate-150 hover:border-emerald-600 transition-all hover:-translate-y-0.5 shadow-sm text-sm sm:text-base">
+                            <i class="fa-solid fa-location-dot text-emerald-500 shrink-0"></i>
+                            <span class="truncate">ภูเก็ต</span>
+                        </a>
+                        <a href="index018.html" class="flex items-center gap-2.5 bg-slate-50 hover:bg-emerald-600 text-slate-700 hover:text-white font-semibold px-4 py-3 rounded-xl border border-slate-150 hover:border-emerald-600 transition-all hover:-translate-y-0.5 shadow-sm text-sm sm:text-base">
+                            <i class="fa-solid fa-location-dot text-emerald-500 shrink-0"></i>
+                            <span class="truncate">ลำปาง</span>
+                        </a>
+                        <a href="index019.html" class="flex items-center gap-2.5 bg-slate-50 hover:bg-emerald-600 text-slate-700 hover:text-white font-semibold px-4 py-3 rounded-xl border border-slate-150 hover:border-emerald-600 transition-all hover:-translate-y-0.5 shadow-sm text-sm sm:text-base">
+                            <i class="fa-solid fa-location-dot text-emerald-500 shrink-0"></i>
+                            <span class="truncate">ลำพูน</span>
+                        </a>
+                        <a href="index020.html" class="flex items-center gap-2.5 bg-slate-50 hover:bg-emerald-600 text-slate-700 hover:text-white font-semibold px-4 py-3 rounded-xl border border-slate-150 hover:border-emerald-600 transition-all hover:-translate-y-0.5 shadow-sm text-sm sm:text-base">
+                            <i class="fa-solid fa-location-dot text-emerald-500 shrink-0"></i>
+                            <span class="truncate">เชียงใหม่</span>
+                        </a>
+                        <a href="index021.html" class="flex items-center gap-2.5 bg-slate-50 hover:bg-emerald-600 text-slate-700 hover:text-white font-semibold px-4 py-3 rounded-xl border border-slate-150 hover:border-emerald-600 transition-all hover:-translate-y-0.5 shadow-sm text-sm sm:text-base">
+                            <i class="fa-solid fa-location-dot text-emerald-500 shrink-0"></i>
+                            <span class="truncate">สตูล</span>
+                        </a>
+                        <a href="index022.html" class="flex items-center gap-2.5 bg-slate-50 hover:bg-emerald-600 text-slate-700 hover:text-white font-semibold px-4 py-3 rounded-xl border border-slate-150 hover:border-emerald-600 transition-all hover:-translate-y-0.5 shadow-sm text-sm sm:text-base">
+                            <i class="fa-solid fa-location-dot text-emerald-500 shrink-0"></i>
+                            <span class="truncate">ตรัง</span>
+                        </a>
+                        <a href="index023.html" class="flex items-center gap-2.5 bg-slate-50 hover:bg-emerald-600 text-slate-700 hover:text-white font-semibold px-4 py-3 rounded-xl border border-slate-150 hover:border-emerald-600 transition-all hover:-translate-y-0.5 shadow-sm text-sm sm:text-base">
+                            <i class="fa-solid fa-location-dot text-emerald-500 shrink-0"></i>
+                            <span class="truncate">เพชรบูรณ์</span>
+                        </a>
+                        <a href="index024.html" class="flex items-center gap-2.5 bg-slate-50 hover:bg-emerald-600 text-slate-700 hover:text-white font-semibold px-4 py-3 rounded-xl border border-slate-150 hover:border-emerald-600 transition-all hover:-translate-y-0.5 shadow-sm text-sm sm:text-base">
+                            <i class="fa-solid fa-location-dot text-emerald-500 shrink-0"></i>
+                            <span class="truncate">สระบุรี</span>
+                        </a>
+                        <a href="index025.html" class="flex items-center gap-2.5 bg-slate-50 hover:bg-emerald-600 text-slate-700 hover:text-white font-semibold px-4 py-3 rounded-xl border border-slate-150 hover:border-emerald-600 transition-all hover:-translate-y-0.5 shadow-sm text-sm sm:text-base">
+                            <i class="fa-solid fa-location-dot text-emerald-500 shrink-0"></i>
+                            <span class="truncate">ลพบุรี</span>
+                        </a>
+                        <a href="index026.html" class="flex items-center gap-2.5 bg-slate-50 hover:bg-emerald-600 text-slate-700 hover:text-white font-semibold px-4 py-3 rounded-xl border border-slate-150 hover:border-emerald-600 transition-all hover:-translate-y-0.5 shadow-sm text-sm sm:text-base">
+                            <i class="fa-solid fa-location-dot text-emerald-500 shrink-0"></i>
+                            <span class="truncate">กระบี่</span>
+                        </a>
+                        <a href="index027.html" class="flex items-center gap-2.5 bg-slate-50 hover:bg-emerald-600 text-slate-700 hover:text-white font-semibold px-4 py-3 rounded-xl border border-slate-150 hover:border-emerald-600 transition-all hover:-translate-y-0.5 shadow-sm text-sm sm:text-base">
+                            <i class="fa-solid fa-location-dot text-emerald-500 shrink-0"></i>
+                            <span class="truncate">ชุมพร</span>
+                        </a>
+                        <a href="index028.html" class="flex items-center gap-2.5 bg-slate-50 hover:bg-emerald-600 text-slate-700 hover:text-white font-semibold px-4 py-3 rounded-xl border border-slate-150 hover:border-emerald-600 transition-all hover:-translate-y-0.5 shadow-sm text-sm sm:text-base">
+                            <i class="fa-solid fa-location-dot text-emerald-500 shrink-0"></i>
+                            <span class="truncate">กำแพงเพชร</span>
+                        </a>
+                        <a href="index029.html" class="flex items-center gap-2.5 bg-slate-50 hover:bg-emerald-600 text-slate-700 hover:text-white font-semibold px-4 py-3 rounded-xl border border-slate-150 hover:border-emerald-600 transition-all hover:-translate-y-0.5 shadow-sm text-sm sm:text-base">
+                            <i class="fa-solid fa-location-dot text-emerald-500 shrink-0"></i>
+                            <span class="truncate">พิษณุโลก</span>
+                        </a>
+                    </div>
+                </div>
+
+          </div>
+      </div>
+    </div>
+        
+    <div id="shared-footer"></div>
+
+    <!-- Essential Interaction Scripting -->
+    <script>
+        // Toggle mobile menu display
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                icon.className = 'fa-solid fa-xmark text-xl'; // เปลี่ยนเป็นรูปกากบาท
+            } else {
+                menu.classList.add('hidden');
+                icon.className = 'fa-solid fa-bars text-xl'; // เปลี่ยนกลับเป็นสามขีด
+            }
+        }
+
+        // Profit estimation calculations
+        function calculateProfit() {
+            const pricePerRun = parseFloat(document.getElementById('calc-type').value);
+            const dailyUsage = parseInt(document.getElementById('calc-usage').value);
+            
+            // update usage label
+            document.getElementById('calc-usage-label').innerText = dailyUsage + ' ครั้ง';
+            
+            // Math for Estimations (Revenue is 30 Days based)
+            let rawMonthly = dailyUsage * pricePerRun * 30;
+            let rawYearly = rawMonthly * 12;
+
+            // format currency numbers for Thai Baht
+            const formattedMonthly = rawMonthly.toLocaleString('th-TH') + ' บาท';
+            const formattedYearly = rawYearly.toLocaleString('th-TH') + ' บาท';
+
+            // write output
+            document.getElementById('monthly-revenue').innerText = formattedMonthly;
+            document.getElementById('yearly-revenue').innerText = formattedYearly;
+        }
+
+        // Initialize profit calculations on page boot
+        window.onload = function() {
+            calculateProfit();
+        };
+    </script>
+    <script src="shared-layout.js"></script>
+</body>
+</html>

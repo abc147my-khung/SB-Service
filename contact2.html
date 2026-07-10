@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S&B Electronic Service จังหวัดปทุมธานี | จำหน่ายตู้น้ำหยอดเหรียญ ตู้น้ำมันหยอดเหรียญ เครื่องซักผ้าหยอดเหรียญ เครื่องอบผ้า ร้านสะดวกซัก</title>
+    <meta name="description" content="S&B Service จังหวัดปทุมธานี จำหน่ายและติดตั้งตู้น้ำหยอดเหรียญ ตู้น้ำมันหยอดเหรียญ เครื่องซักผ้าหยอดเหรียญ เครื่องอบผ้า ร้านสะดวกซัก ตู้เติมเงิน และอุปกรณ์ธุรกิจหยอดเหรียญครบวงจร">
+    
+    <!-- Tailwind CSS for Modern & Responsive Layouts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts: Prompt & Inter for high-end typography -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Prompt', 'Inter', sans-serif;
+            background-color: #f8fafc;
+            scroll-behavior: smooth;
+        }
+
+        /* Smooth Custom Transitions */
+        .hover-scale {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .hover-scale:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px -10px rgba(5, 150, 105, 0.3);
+        }
+
+        /* Glassmorphism utility */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Standard Dropdown Custom Styles for Desktop */
+        @media (min-width: 1024px) {
+            .dropdown-hover:hover .dropdown-menu {
+                display: block;
+                animation: fadeIn 0.2s ease-out;
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            deep: '#0f172a',
+                            navy: '#1e3a8a',
+                            blue: '#3b82f6',
+                            emerald: '#059669',
+                            mint: '#10b981',
+                            teal: '#0d9488',
+                            gold: '#f59e0b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="text-slate-800 antialiased min-h-screen flex flex-col">
+
+    <!-- Premium Header Area -->
+    <div id="shared-header"></div>
+
+        <div class="max-w-7xl mx-auto px-4 py-12">
+            <h2 class="text-3xl font-black text-slate-800 mb-6">ติดต่อเรา</h2>
+            <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-100">
+                <p class="text-lg text-slate-600 mb-8"><strong>เอส แอนด์ บี อีเล็คโทรนิคส์ เซอร์วิส จำกัด (S &amp; B ELECTRONIC SERVICE COMPANY LIMITED) <br>
+                </strong>เลขที่ 120/288 หมู่ที่ 5 ตำบลบางเดื่อ อำเภอเมืองปทุม จังหวัดปทุมธานี 12000 <br>
+                </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <a href="index.html"><img src="Images/BG.png" class="rounded-2xl shadow-md"></a>
+<div class="space-y-4 flex flex-col justify-center">
+                      <div class="p-6 bg-emerald-50 rounded-2xl">
+                            <h4 class="font-bold text-emerald-800 mb-2">สอบถามข้อมูลเพิ่มเติม</h4>
+                            <p class="text-emerald-600">โทร: 084-912-5571</p>
+                            <p class="text-emerald-600">Line: @sbservice</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<div id="shared-footer"></div>
+
+    <!-- Essential Interaction Scripting -->
+    <script>
+        // Toggle mobile menu display
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                icon.className = 'fa-solid fa-xmark text-xl'; // เปลี่ยนเป็นรูปกากบาท
+            } else {
+                menu.classList.add('hidden');
+                icon.className = 'fa-solid fa-bars text-xl'; // เปลี่ยนกลับเป็นสามขีด
+            }
+        }
+
+        // Profit estimation calculations
+        function calculateProfit() {
+            const pricePerRun = parseFloat(document.getElementById('calc-type').value);
+            const dailyUsage = parseInt(document.getElementById('calc-usage').value);
+            
+            // update usage label
+            document.getElementById('calc-usage-label').innerText = dailyUsage + ' ครั้ง';
+            
+            // Math for Estimations (Revenue is 30 Days based)
+            let rawMonthly = dailyUsage * pricePerRun * 30;
+            let rawYearly = rawMonthly * 12;
+
+            // format currency numbers for Thai Baht
+            const formattedMonthly = rawMonthly.toLocaleString('th-TH') + ' บาท';
+            const formattedYearly = rawYearly.toLocaleString('th-TH') + ' บาท';
+
+            // write output
+            document.getElementById('monthly-revenue').innerText = formattedMonthly;
+            document.getElementById('yearly-revenue').innerText = formattedYearly;
+        }
+
+        // Initialize profit calculations on page boot
+        window.onload = function() {
+            calculateProfit();
+        };
+    </script>
+    <script src="shared-layout.js"></script>
+</body>
+</html>

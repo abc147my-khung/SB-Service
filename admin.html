@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>ระบบหลังบ้าน | S&B Electronic Service</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <main id="login-view" class="login-shell">
+    <section class="login-card">
+      <div class="brand-mark">S&amp;B</div>
+      <p class="eyebrow">ELECTRONIC SERVICE</p>
+      <h1>เข้าสู่ระบบหลังบ้าน</h1>
+      <p class="muted">จัดการลูกค้าที่ติดต่อเข้ามา สินค้า และข้อมูลหน้าเว็บไซต์</p>
+      <form id="login-form">
+        <label>ชื่อผู้ใช้<input name="username" autocomplete="username" required></label>
+        <label>รหัสผ่าน<input name="password" type="password" autocomplete="current-password" required></label>
+        <button class="btn btn-primary btn-block" type="submit">เข้าสู่ระบบ</button>
+        <p id="login-error" class="form-error" role="alert"></p>
+      </form>
+    </section>
+  </main>
+
+  <div id="app-view" class="app-shell hidden">
+    <aside class="sidebar">
+      <a class="sidebar-brand" href="/admin"><span>S&amp;B</span><small>ADMIN</small></a>
+      <nav id="main-nav">
+        <button class="nav-item active" data-page="dashboard"><span>◫</span>ภาพรวม</button>
+        <button class="nav-item" data-page="inquiries"><span>✦</span>ลูกค้าที่ติดต่อ</button>
+        <button class="nav-item" data-page="products"><span>▦</span>สินค้า</button>
+        <button class="nav-item" data-page="settings"><span>⚙</span>ตั้งค่าเว็บไซต์</button>
+        <button class="nav-item" data-page="security"><span>⌾</span>ความปลอดภัย</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <a href="/" target="_blank" rel="noopener">เปิดหน้าเว็บไซต์ ↗</a>
+        <button id="logout-button">ออกจากระบบ</button>
+      </div>
+    </aside>
+
+    <div class="content-shell">
+      <header class="topbar">
+        <button id="menu-button" class="icon-button" aria-label="เปิดเมนู">☰</button>
+        <div><p class="eyebrow">ระบบจัดการเว็บไซต์</p><h2 id="page-title">ภาพรวม</h2></div>
+        <div class="user-pill"><span class="user-dot"></span><span id="username">admin</span></div>
+      </header>
+
+      <main class="workspace">
+        <section id="page-dashboard" class="page active">
+          <div id="password-warning" class="warning hidden">
+            <strong>ควรเปลี่ยนรหัสผ่านเริ่มต้น</strong>
+            <span>เพื่อความปลอดภัย กรุณาเปลี่ยนรหัสผ่านก่อนนำระบบขึ้นใช้งานจริง</span>
+            <button class="btn btn-small" data-go="security">เปลี่ยนตอนนี้</button>
+          </div>
+          <div class="stat-grid">
+            <article class="stat-card stat-blue"><span>ลูกค้าทั้งหมด</span><strong id="stat-inquiries">0</strong></article>
+            <article class="stat-card stat-orange"><span>รอติดต่อกลับ</span><strong id="stat-new">0</strong></article>
+            <article class="stat-card stat-green"><span>สินค้าที่เปิดแสดง</span><strong id="stat-active-products">0</strong></article>
+            <article class="stat-card stat-slate"><span>สินค้าทั้งหมด</span><strong id="stat-products">0</strong></article>
+          </div>
+          <section class="panel">
+            <div class="panel-head"><div><p class="eyebrow">ล่าสุด</p><h3>ลูกค้าที่เพิ่งติดต่อ</h3></div><button class="text-button" data-go="inquiries">ดูทั้งหมด →</button></div>
+            <div id="recent-inquiries" class="table-wrap"></div>
+          </section>
+        </section>
+
+        <section id="page-inquiries" class="page">
+          <section class="panel">
+            <div class="panel-head panel-head-wrap">
+              <div><p class="eyebrow">CRM</p><h3>รายชื่อลูกค้าที่ติดต่อ</h3></div>
+              <div class="filters">
+                <input id="inquiry-search" type="search" placeholder="ค้นหาชื่อ เบอร์โทร จังหวัด">
+                <select id="inquiry-status">
+                  <option value="all">ทุกสถานะ</option>
+                  <option value="new">รอติดต่อ</option>
+                  <option value="contacted">ติดต่อแล้ว</option>
+                  <option value="closed">ปิดงาน</option>
+                </select>
+              </div>
+            </div>
+            <div id="inquiries-list" class="table-wrap"></div>
+          </section>
+        </section>
+
+        <section id="page-products" class="page">
+          <section class="panel">
+            <div class="panel-head">
+              <div><p class="eyebrow">CATALOG</p><h3>จัดการรายการสินค้า</h3></div>
+              <button id="add-product-button" class="btn btn-primary">+ เพิ่มสินค้า</button>
+            </div>
+            <div id="products-list" class="table-wrap"></div>
+          </section>
+        </section>
+
+        <section id="page-settings" class="page">
+          <section class="panel form-panel">
+            <div class="panel-head"><div><p class="eyebrow">WEBSITE</p><h3>ข้อมูลติดต่อและประกาศ</h3></div></div>
+            <form id="settings-form" class="form-grid">
+              <label class="full">ชื่อธุรกิจ<input name="businessName" required maxlength="150"></label>
+              <label>เบอร์โทร<input name="phone" inputmode="tel" required maxlength="20"></label>
+              <label>ลิงก์ LINE<input name="lineUrl" type="url" maxlength="300"></label>
+              <label class="full">ข้อความประกาศหน้าเว็บไซต์<textarea name="announcement" rows="3" maxlength="300" placeholder="ปล่อยว่างเพื่อไม่แสดงแถบประกาศ"></textarea></label>
+              <div class="full"><button class="btn btn-primary" type="submit">บันทึกการตั้งค่า</button></div>
+            </form>
+          </section>
+        </section>
+
+        <section id="page-security" class="page">
+          <section class="panel form-panel narrow">
+            <div class="panel-head"><div><p class="eyebrow">SECURITY</p><h3>เปลี่ยนรหัสผ่าน</h3></div></div>
+            <form id="password-form" class="stack-form">
+              <label>รหัสผ่านปัจจุบัน<input name="currentPassword" type="password" autocomplete="current-password" required></label>
+              <label>รหัสผ่านใหม่<input name="newPassword" type="password" autocomplete="new-password" minlength="10" required><small>อย่างน้อย 10 ตัว และต้องมีตัวอักษรกับตัวเลข</small></label>
+              <label>ยืนยันรหัสผ่านใหม่<input name="confirmPassword" type="password" autocomplete="new-password" minlength="10" required></label>
+              <button class="btn btn-primary" type="submit">เปลี่ยนรหัสผ่าน</button>
+            </form>
+          </section>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <dialog id="product-dialog">
+    <form id="product-form" method="dialog">
+      <div class="dialog-head"><h3 id="product-dialog-title">เพิ่มสินค้า</h3><button type="button" class="icon-button" id="close-product-dialog" aria-label="ปิด">×</button></div>
+      <input name="id" type="hidden">
+      <label>ชื่อสินค้า<input name="name" required maxlength="150"></label>
+      <label>หมวดหมู่<input name="category" maxlength="100"></label>
+      <label>ชื่อไฟล์หน้าเว็บ<input name="page" maxlength="200" placeholder="product_1.html"></label>
+      <label>สถานะ<select name="status"><option value="active">เปิดแสดง</option><option value="inactive">ซ่อน</option></select></label>
+      <div class="dialog-actions"><button type="button" class="btn btn-secondary" id="cancel-product">ยกเลิก</button><button class="btn btn-primary" type="submit">บันทึก</button></div>
+    </form>
+  </dialog>
+
+  <script src="admin.js"></script>
+</body>
+</html>

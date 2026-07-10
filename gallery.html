@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ผลงานการติดตั้งของเรา | S&B Electronic Service</title>
+    <meta name="description" content="ศูนย์รวมธุรกิจหยอดเหรียญ ตู้น้ำ ตู้น้ำมัน เครื่องซักผ้า ตู้เติมเงิน ราคาเดียวกันทั่วประเทศ ดูแลโดยมืออาชีพ">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Prompt', 'Inter', sans-serif;
+            background-color: #f8fafc;
+            scroll-behavior: smooth;
+        }
+
+        /* Smooth Custom Transitions */
+        .hover-scale {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .hover-scale:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px -10px rgba(5, 150, 105, 0.3);
+        }
+
+        /* Glassmorphism utility */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Standard Dropdown Custom Styles for Desktop */
+        @media (min-width: 1024px) {
+            .dropdown-hover:hover .dropdown-menu {
+                display: block;
+                animation: fadeIn 0.2s ease-out;
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            deep: '#0f172a',
+                            navy: '#1e3a8a',
+                            blue: '#3b82f6',
+                            emerald: '#059669',
+                            mint: '#10b981',
+                            teal: '#0d9488',
+                            gold: '#f59e0b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="text-slate-800 antialiased min-h-screen flex flex-col">
+
+    <div id="shared-header"></div>
+
+    <div class="max-w-4xl mx-auto px-4 py-12">
+        <h2 class="text-3xl font-black text-center mb-8">Gallery ผลงานการติดตั้ง</h2>
+
+        <div class="relative w-full max-w-2xl mx-auto overflow-hidden rounded-2xl shadow-2xl bg-black aspect-video">
+            <div id="carousel" class="flex transition-transform duration-700 ease-in-out h-full">
+                </div>
+
+            <button onclick="prevSlide()" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/50 p-3 rounded-full hover:bg-white transition z-20">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button onclick="nextSlide()" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/50 p-3 rounded-full hover:bg-white transition z-20">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // ใส่รายชื่อไฟล์รูปภาพของคุณตรงนี้
+        const images = [
+            "Images/15.png", "Images/16.png", "Images/17.png", "Images/18.png", 
+            "Images/19.png", "Images/20.png", "Images/21.png", "Images/22.png", 
+            "Images/23.jpg", "Images/24.jpg", "Images/25.jpg", "Images/26.jpg", 
+            "Images/27.jpg", "Images/28.jpg", "Images/29.jpg", "Images/30.jpg"
+        ];
+
+        const carousel = document.getElementById('carousel');
+
+        // ฟังก์ชันสร้าง Slide อัตโนมัติ
+        images.forEach(src => {
+            const slide = document.createElement('div');
+            slide.className = "w-full flex-shrink-0 h-full relative flex items-center justify-center overflow-hidden";
+            slide.innerHTML = `
+                <div class="absolute inset-0 bg-cover bg-center blur-xl opacity-60" style="background-image: url('${src}');"></div>
+                <img src="${src}" class="relative max-w-full max-h-full object-contain z-10" alt="ผลงานติดตั้ง">
+            `;
+            carousel.appendChild(slide);
+        });
+
+        let currentIndex = 0;
+        function updateCarousel() {
+            carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateCarousel();
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateCarousel();
+        }
+
+        setInterval(nextSlide, 5000);
+    </script>
+
+    <div id="shared-footer"></div>
+
+    <script>
+        let currentIndex = 0;
+        const carousel = document.getElementById('carousel');
+        const images = carousel.querySelectorAll('img');
+        const totalImages = images.length;
+
+        function updateCarousel() {
+            carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalImages;
+            updateCarousel();
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+            updateCarousel();
+        }
+        
+        // Auto play (optional)
+        let autoPlay = setInterval(nextSlide, 5000);
+
+        // Pause auto play on hover (optional)
+        const carouselContainer = document.querySelector('.relative');
+        carouselContainer.addEventListener('mouseenter', () => clearInterval(autoPlay));
+        carouselContainer.addEventListener('mouseleave', () => autoPlay = setInterval(nextSlide, 5000));
+
+    </script>
+
+    <script>
+        // Toggle mobile menu display
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                icon.className = 'fa-solid fa-xmark text-xl'; // เปลี่ยนเป็นรูปกากบาท
+            } else {
+                menu.classList.add('hidden');
+                icon.className = 'fa-solid fa-bars text-xl'; // เปลี่ยนกลับเป็นสามขีด
+            }
+        }
+
+        // Profit estimation calculations
+        function calculateProfit() {
+            const calcTypeSelect = document.getElementById('calc-type');
+            if (!calcTypeSelect) return; // Exit if element doesn't exist on this page
+
+            const pricePerRun = parseFloat(calcTypeSelect.value);
+            const dailyUsage = parseInt(document.getElementById('calc-usage').value);
+            
+            // update usage label
+            document.getElementById('calc-usage-label').innerText = dailyUsage + ' ครั้ง';
+            
+            // Math for Estimations (Revenue is 30 Days based)
+            let rawMonthly = dailyUsage * pricePerRun * 30;
+            let rawYearly = rawMonthly * 12;
+
+            // format currency numbers for Thai Baht
+            const formattedMonthly = rawMonthly.toLocaleString('th-TH') + ' บาท';
+            const formattedYearly = rawYearly.toLocaleString('th-TH') + ' บาท';
+
+            // write output
+            document.getElementById('monthly-revenue').innerText = formattedMonthly;
+            document.getElementById('yearly-revenue').innerText = formattedYearly;
+        }
+
+        // Initialize profit calculations on page boot
+        window.onload = function() {
+            calculateProfit();
+        };
+    </script>
+    <script src="shared-layout.js"></script>
+</body>
+</html>

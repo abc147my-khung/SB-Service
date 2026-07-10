@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ธุรกิจร้านสะดวกซัก | S&B Electronic Service</title>
+    <meta name="description" content="S&B Service จำหน่ายและติดตั้งตู้น้ำหยอดเหรียญ ตู้น้ำมันหยอดเหรียญ เครื่องซักผ้าหยอดเหรียญ เครื่องอบผ้า ร้านสะดวกซัก ตู้เติมเงิน และอุปกรณ์ธุรกิจหยอดเหรียญครบวงจร">
+    
+    <!-- Tailwind CSS for Modern & Responsive Layouts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts: Prompt & Inter for high-end typography -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Prompt', 'Inter', sans-serif;
+            background-color: #f8fafc;
+            scroll-behavior: smooth;
+        }
+
+        /* Smooth Custom Transitions */
+        .hover-scale {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .hover-scale:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(5, 150, 105, 0.15), 0 10px 10px -5px rgba(5, 150, 105, 0.1);
+        }
+
+        /* Glassmorphism utility */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        @media (min-width: 1024px) {
+            .dropdown-hover:hover .dropdown-menu {
+                display: block;
+                animation: fadeIn 0.2s ease-out;
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            deep: '#0f172a',
+                            navy: '#1e3a8a',
+                            blue: '#3b82f6',
+                            emerald: '#059669',
+                            mint: '#10b981',
+                            teal: '#0d9488',
+                            gold: '#f59e0b'
+                        }
+                    }
+                }
+            }
+        }
+ </script>
+</head>
+<body class="text-slate-800 antialiased min-h-screen flex flex-col bg-slate-50">
+
+    <div id="shared-header"></div>
+
+    <div class="max-w-7xl mx-auto px-4 pt-12 pb-6 w-full">
+        <div class="bg-gradient-to-br from-slate-900 via-slate-800 to-brand-navy rounded-3xl overflow-hidden text-white shadow-2xl flex flex-col lg:flex-row items-center">
+            
+            <div class="lg:w-1/2 p-8 md:p-12 lg:p-16 flex flex-col justify-center">
+                <span class="text-brand-mint font-semibold uppercase tracking-wider mb-3 block text-sm bg-emerald-500/10 px-3 py-1 rounded-full w-fit">S&B Service Professional</span>
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-black leading-tight mb-6">
+                    มั่นใจทุกการลงทุน <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300">เลือกเปิดร้านสะดวกซัก</span> กับเรา ⚙️✨
+                </h1>
+                <p class="text-slate-300 text-base md:text-lg mb-8 leading-relaxed">
+                    เริ่มต้นธุรกิจเสือนอนกินอย่างมั่นคงด้วยระบบร้านสะดวกซักที่ได้มาตรฐานสากล เครื่องซักและอบผ้าอุตสาหกรรมยี่ห้อ <strong class="text-white">LG Commercial</strong> ที่มีความทนทานสูงและประหยัดพลังงาน ครบ จบ คุ้ม พร้อมเปิดร้านได้ทันที!
+                </p>
+                
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4 border-t border-slate-700/50">
+                    <a href="https://line.me/ti/p/@sbservice" target="_blank" class="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-bold px-6 py-3.5 rounded-xl text-center shadow-lg transition duration-300 flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-line text-xl"></i> ปรึกษาทำเลผ่าน Line
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Right Image Slider Showcase -->
+            <div class="lg:w-1/2 w-full flex items-center justify-center bg-slate-950/40 self-stretch min-h-[350px] lg:min-h-auto overflow-hidden relative">
+                <div id="slider" class="relative w-full h-full flex transition-transform duration-700 ease-in-out">
+                    <img src="Images/SSS.png" class="w-full h-full object-contain flex-shrink-0" alt="Set S">
+                    <img src="Images/MMM.png" class="w-full h-full object-contain flex-shrink-0" alt="Set M">
+                    <img src="Images/LLL.png" class="w-full h-full object-contain flex-shrink-0" alt="Set L">
+                    <img src="Images/XL.png" class="w-full h-full object-contain flex-shrink-0" alt="Set XL">
+                </div>
+                
+                <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                    <div class="w-2 h-2 rounded-full bg-white/50"></div>
+                    <div class="w-2 h-2 rounded-full bg-white/50"></div>
+                    <div class="w-2 h-2 rounded-full bg-white/50"></div>
+                    <div class="w-2 h-2 rounded-full bg-white/50"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script for automatic sliding -->
+    <script>
+        const slider = document.getElementById('slider');
+        let index = 0;
+        
+        function autoSlide() {
+            index++;
+            if (index >= 4) index = 0;
+            slider.style.transform = `translateX(-${index * 100}%)`;
+        }
+        
+        setInterval(autoSlide, 4000);
+    </script>
+
+    <!-- Packages Pricing Grid (S, M, L, XL) -->
+    <div class="max-w-7xl mx-auto px-4 py-12 w-full">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <h2 class="text-3xl font-black text-slate-900 mb-4">เลือกแพ็กเกจการลงทุนที่เหมาะกับคุณ</h2>
+            <p class="text-slate-600">ราคาตรงจากโรงงาน ไม่รวมงานตกแต่ง Built-In พร้อมทีมช่างผู้เชี่ยวชาญดูแลอย่างใกล้ชิด</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+            
+            <!-- Set S -->
+            <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm hover-scale flex flex-col relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-emerald-500 text-white text-xs font-bold px-3 py-1 rounded-bl-xl">แนะนำเริ่มต้น</div>
+                <div class="mb-4">
+                    <span class="text-xs uppercase tracking-wider font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-md">เริ่มต้นมั่นคง</span>
+                    <h3 class="text-2xl font-black text-slate-800 mt-2">Set S</h3>
+                </div>
+                <div class="mb-6 border-b border-slate-100 pb-4">
+                    <span class="text-3xl font-black text-slate-900">350,000</span> <span class="text-slate-500 text-sm">บาท</span>
+                </div>
+                <ul class="space-y-3 text-slate-600 text-sm mb-8 flex-grow">
+                    <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5 shrink-0"></i> เครื่องซัก/อบ 13 kg. (2 คู่)</li>
+                    <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5 shrink-0"></i> เครื่องซัก/อบ 18 kg. (1 คู่)</li>
+                    <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5 shrink-0"></i> เครื่องแลกเหรียญอัตโนมัติ 1 เครื่อง</li>
+                    <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5 shrink-0"></i> เครื่องจ่ายน้ำยาอัตโนมัติ 1 เครื่อง</li>
+                </ul>
+                <a href="https://line.me/ti/p/@sbservice" class="block w-full py-3 text-center bg-slate-900 hover:bg-brand-navy text-white font-bold rounded-xl transition duration-200 text-sm">สนใจแพ็กเกจนี้</a>
+            </div>
+
+            <!-- Set M -->
+            <div class="bg-white rounded-2xl p-6 border border-emerald-500 ring-2 ring-emerald-500/10 shadow-md hover-scale flex flex-col relative">
+                <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-xs font-black px-4 py-1 rounded-full shadow-md uppercase tracking-wider">Popular</div>
+                <div class="mb-4 mt-2">
+                    <span class="text-xs uppercase tracking-wider font-bold text-blue-600 bg-blue-50 px-2.5 py-1 rounded-md">คุ้มค่าสูงสุด</span>
+                    <h3 class="text-2xl font-black text-slate-800 mt-2">Set M</h3>
+                </div>
+                <div class="mb-6 border-b border-slate-100 pb-4">
+                    <span class="text-3xl font-black text-slate-900">450,000</span> <span class="text-slate-500 text-sm">บาท</span>
+                </div>
+                <ul class="space-y-3 text-slate-600 text-sm mb-8 flex-grow">
+                    <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5 shrink-0"></i> เครื่องซัก/อบ 13 kg. (3 คู่)</li>
+                    <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5 shrink-0"></i> เครื่องซัก/อบ 18 kg. (1 คู่)</li>
+                    <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5 shrink-0"></i> เครื่องแลกเหรียญอัตโนมัติ 1 เครื่อง</li>
+                    <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5 shrink-0"></i> เครื่องจ่ายน้ำยาอัตโนมัติ 1 เครื่อง</li>
+                </ul>
+                <a href="https://line.me/ti/p/@sbservice" class="block w-full py-3 text-center bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-bold rounded-xl transition duration-200 text-sm shadow-md shadow-emerald-500/20">จองสิทธิ์แพ็กเกจ</a>
+            </div>
+
+            <!-- Set L -->
+            <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm hover-scale flex flex-col">
+                <div class="mb-4">
+                    <span class="text-xs uppercase tracking-wider font-bold text-purple-600 bg-purple-50 px-2.5 py-1 rounded-md">ธุรกิจขนาดกลาง</span>
+                    <h3 class="text-2xl font-black text-slate-800 mt-2">Set L</h3>
+                </div>
+                <div class="mb-6 border-b border-slate-100 pb-4">
+                    <span class="text-3xl font-black text-slate-900">580,000</span> <span class="text-slate-500 text-sm">บาท</span>
+                </div>
+                <ul class="space-y-3 text-slate-600 text-sm mb-8 flex-grow">
+                    <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5 shrink-0"></i> เครื่องซัก/อบ 13 kg. (3 คู่)</li>
+                    <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5 shrink-0"></i> เครื่องซัก/อบ 18 kg. (2 คู่)</li>
+                    <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5 shrink-0"></i> เครื่องแลกเหรียญอัตโนมัติ  1 เครื่อง</li>
+                    <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5 shrink-0"></i> เครื่องจ่ายน้ำยาอัตโนมัติ 1 เครื่อง</li>
+                </ul>
+                <a href="https://line.me/ti/p/@sbservice" class="block w-full py-3 text-center bg-slate-900 hover:bg-brand-navy text-white font-bold rounded-xl transition duration-200 text-sm">สนใจแพ็กเกจนี้</a>
+            </div>
+
+            <!-- Set XL -->
+            <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm hover-scale flex flex-col">
+                <div class="mb-4">
+                    <span class="text-xs uppercase tracking-wider font-bold text-amber-600 bg-amber-50 px-2.5 py-1 rounded-md">ศูนย์ใหญ่ครบวงจร</span>
+                    <h3 class="text-2xl font-black text-slate-800 mt-2">Set XL</h3>
+                </div>
+                <div class="mb-6 border-b border-slate-100 pb-4">
+                    <span class="text-3xl font-black text-slate-900">700,000</span> <span class="text-slate-500 text-sm">บาท</span>
+                </div>
+                <ul class="space-y-3 text-slate-600 text-sm mb-8 flex-grow">
+                    <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5 shrink-0"></i> เครื่องซัก/อบ 13 kg. (4 คู่)</li>
+                    <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5 shrink-0"></i> เครื่องซัก/อบ 18 kg. (2 คู่)</li>
+                    <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5 shrink-0"></i> ระบบแลกเหรียญอัตโนมัติ 1 เครื่อง</li>
+                    <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5 shrink-0"></i> เครื่องจ่ายน้ำยาอัตโนมัติ 1 เครื่อง</li>
+                </ul>
+                <a href="https://line.me/ti/p/@sbservice" class="block w-full py-3 text-center bg-slate-900 hover:bg-brand-navy text-white font-bold rounded-xl transition duration-200 text-sm">สนใจแพ็กเกจนี้</a>
+            </div>
+
+        </div>
+
+        <!-- Footnote Info -->
+        <div class="mt-8 text-center bg-slate-100 border border-slate-200 rounded-xl p-4 text-xs text-slate-500 max-w-4xl mx-auto">
+            💡 <strong>หมายเหตุ:</strong> แพ็กเกจข้างต้นเป็นราคาตรงจากโรงงาน ไม่รวมงานตกแต่ง Built-In โครงสร้าง และอุปกรณ์ประกอบงานระบบเสริม | แถมฟรีป้ายวิธีการใช้งานหน้าร้านสำหรับทุกแพ็กเกจ ต่างจังหวัดดูแลส่งตรงถึงที่ทั่วประเทศ 🛠️
+        </div>
+    </div>
+    
+    <div id="shared-footer"></div>
+
+    <!-- Essential Interaction Scripting -->
+    <script>
+        // Toggle mobile menu display
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                icon.className = 'fa-solid fa-xmark text-xl'; 
+            } else {
+                menu.classList.add('hidden');
+                icon.className = 'fa-solid fa-bars text-xl'; 
+            }
+        }
+
+        // Profit estimation calculations
+        function calculateProfit() {
+            const pricePerRun = parseFloat(document.getElementById('calc-type')?.value || 40);
+            const dailyUsage = parseInt(document.getElementById('calc-usage')?.value || 10);
+            
+            const label = document.getElementById('calc-usage-label');
+            if(label) label.innerText = dailyUsage + ' ครั้ง';
+            
+            let rawMonthly = dailyUsage * pricePerRun * 30;
+            let rawYearly = rawMonthly * 12;
+
+            const formattedMonthly = rawMonthly.toLocaleString('th-TH') + ' บาท';
+            const formattedYearly = rawYearly.toLocaleString('th-TH') + ' บาท';
+
+            const monthlyEl = document.getElementById('monthly-revenue');
+            const yearlyEl = document.getElementById('yearly-revenue');
+            if(monthlyEl) monthlyEl.innerText = formattedMonthly;
+            if(yearlyEl) yearlyEl.innerText = formattedYearly;
+        }
+
+        window.onload = function() {
+            calculateProfit();
+        };
+    </script>
+	
+    <script src="shared-layout.js"></script>
+</body>
+</html>

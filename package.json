@@ -1,0 +1,12 @@
+{
+  "name": "sb-service-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "เว็บไซต์และระบบหลังบ้าน S&B Electronic Service",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บริการและการรับประกันต่างจังหวัด | S&B Electronic Service</title>
+    <meta name="description" content="ศูนย์รวมธุรกิจหยอดเหรียญ ตู้น้ำ ตู้น้ำมัน เครื่องซักผ้า ตู้เติมเงิน ราคาเดียวกันทั่วประเทศ ดูแลโดยมืออาชีพ">
+    
+    <!-- Tailwind CSS for Modern & Responsive Layouts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts: Prompt & Inter for high-end typography -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Prompt', 'Inter', sans-serif;
+            background-color: #f8fafc;
+            scroll-behavior: smooth;
+        }
+
+        /* Smooth Custom Transitions */
+        .hover-scale {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .hover-scale:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px -10px rgba(5, 150, 105, 0.3);
+        }
+
+        /* Glassmorphism utility */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Standard Dropdown Custom Styles for Desktop */
+        @media (min-width: 1024px) {
+            .dropdown-hover:hover .dropdown-menu {
+                display: block;
+                animation: fadeIn 0.2s ease-out;
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            deep: '#0f172a',
+                            navy: '#1e3a8a',
+                            blue: '#3b82f6',
+                            emerald: '#059669',
+                            mint: '#10b981',
+                            teal: '#0d9488',
+                            gold: '#f59e0b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="text-slate-800 antialiased min-h-screen flex flex-col">
+
+    <!-- Premium Header Area -->
+    <div id="shared-header"></div>
+
+	<div class="max-w-5xl mx-auto px-4 py-12">
+    <!-- Header -->
+    <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-black text-slate-800 mb-4">บริการและการรับประกัน ในต่างจังหวัด</h2>
+        <div class="w-20 h-1 bg-emerald-600 mx-auto rounded-full"></div>
+    </div>
+
+    <div class="bg-white p-6 md:p-10 rounded-3xl shadow-xl border border-slate-100 space-y-8">
+        
+        <!-- Contact Banner -->
+        <div class="bg-slate-900 text-white p-8 rounded-2xl text-center shadow-lg transform hover:scale-[1.01] transition-all">
+            <p class="text-lg opacity-80">แจ้งซ่อมเบอร์เดียว</p>
+            <p class="text-4xl font-black text-emerald-400">084-912-5571</p>
+        </div>
+
+        <!-- Warning Box -->
+        <div class="p-6 bg-red-50 border-l-4 border-red-500 rounded-r-xl">
+            <h4 class="font-bold text-red-800 mb-2">หมายเหตุ :</h4>
+            <p class="text-slate-700 leading-relaxed">แจ้งซ่อมผ่านทางช่างไม่ว่าเป็นผู้ใดก็ตามโดยไม่แจ้งเข้าที่บริษัทโดยตรงทางบริษัทจะไม่รับผิดชอบในทุกกรณีทั้งสิ้น แม้ช่างจะเป็นช่างของบริษัทก็ตาม และทางบริษัทจะถือว่าช่างจะมี ความผิดร้ายแรงและต้องถูกบทลงโทษตามกฎของบริษัทอีกด้วย และเครื่องของลูกค้าจะหมดประกันในทุกกรณีทั้งสิ้น</p>
+        </div>
+
+        <!-- Main Content Sections -->
+        <div class="space-y-6">
+            <h3 class="text-2xl font-bold text-emerald-700 border-b pb-2">เงื่อนไขการรับประกัน ของ ศูนย์บริการ ต่างจังหวัด</h3>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Laundry Section -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                    <h4 class="font-bold text-lg mb-2 text-emerald-800">เครื่องซักผ้าหยอดเหรียญ</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">รับประกัน อะไหล่ในกล่องหยอดเหรียญ 1 ปี อะไหล่เครื่องซักผ้าไม่รับประกันในทุกกรณี PCB เครื่องซักผ้า จะมีระยะประกัน 1 เดือนในทุกกรณี ภายใน 1 เดือนนับจากวันที่ติดตั้งซ่อมฟรี เลย 1 เดือนขึ้นไป รอบศูนย์บริการ 10 กม. มีค่าบริการ ครั้งละ 200 บาท ได้รับบริการภายใน 3-7 วัน หลังได้รับแจ้ง เลย 10 กม.ขึ้นไป ทางบริษัทเก็บค่าน้ำมัน เพิ่ม กม. ละ 10 บาท ในกรณีหมดประกัน หรือว่าเลย 1 ปี มีค่าบริการครั้งละ 500 บาท รอบศูนย์บริการภายในระยะทาง 10 กม. ได้รับบริการภายใน 3-7 วัน หลังได้รับแจ้ง เลย 10 กม. ทางบริษัทเก็บค่าน้ำมัน เพิ่ม กม. ละ 10 บาท</p>
+                </div>
+
+                <!-- Water Vending -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                    <h4 class="font-bold text-lg mb-2 text-emerald-800">ตู้น้ำหยอดเหรียญ</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">รับประกัน อะไหล่ภายในตู้ 1 ปี แผงวงจร 2 ปี ภายใน 1 เดือนนับจากวันที่ติดตั้ง ซ่อมฟรี เลย 1 เดือนขึ้นไป รอบศูนย์บริการ 10 กม. มีค่าบริการ ครั้งละ 200 บาท ได้รับบริการภายใน 3-7 วัน หลังได้รับแจ้ง เลย 10 กม.ขึ้นไป ทางบริษัทเก็บค่าน้ำมัน เพิ่ม กม. ละ 10 บาท ในกรณีหมดประกัน หรือว่าเลย 1 ปี มีค่าบริการครั้งละ 500 บาท รอบศูนย์บริการภายในระยะทาง 10 กม. ได้รับบริการภายใน 3-7 วัน หลังได้รับแจ้ง เลย 10 กม. ทางบริษัทเก็บค่าน้ำมัน เพิ่ม กม. ละ 10 บาท</p>
+                </div>
+
+                <!-- Mobile Topup -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                    <h4 class="font-bold text-lg mb-2 text-emerald-800">ตู้เติมเงินมือถือ</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">รับประกัน อะไหล่ภายในตู้ 1 ปี ภายใน 1 เดือนนับจากวันที่ติดตั้ง ซ่อมฟรี เลย 1 เดือนขึ้นไป รอบศูนย์บริการ 10 กม. มีค่าบริการ ครั้งละ 200 บาท ได้รับบริการภายใน 3-7 วัน หลังได้รับแจ้ง เลย 10 กม.ขึ้นไป ทางบริษัทเก็บค่าน้ำมัน เพิ่ม กม. ละ 10 บาท ในกรณีหมดประกัน หรือว่าเลย 1 ปี มีค่าบริการครั้งละ 500 บาท รอบศูนย์บริการภายในระยะทาง 10 กม. ได้รับบริการภายใน 3-7 วัน หลังได้รับแจ้ง เลย 10 กม. ทางบริษัทเก็บค่าน้ำมัน เพิ่ม กม. ละ 10 บาท</p>
+                </div>
+
+                <!-- Oil Vending -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                    <h4 class="font-bold text-lg mb-2 text-emerald-800">ตู้น้ำมันหยอดเหรียญ</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">รับประกัน อะไหล่ภายในตู้ 1 ปี ภายใน 1 เดือนนับจากวันที่ติดตั้ง ซ่อมฟรี เลย 1 เดือนขึ้นไป รอบศูนย์บริการ 10 กม. มีค่าบริการ ครั้งละ 200 บาท ได้รับบริการภายใน 3-7 วัน หลังได้รับแจ้ง เลย 10 กม.ขึ้นไป ทางบริษัทเก็บค่าน้ำมัน เพิ่ม กม. ละ 10 บาท ในกรณีหมดประกัน หรือว่าเลย 1 ปี มีค่าบริการครั้งละ 500 บาท รอบศูนย์บริการภายในระยะทาง 10 กม. ได้รับบริการภายใน 3-7 วัน หลังได้รับแจ้ง เลย 10 กม. ทางบริษัทเก็บค่าน้ำมัน เพิ่ม กม. ละ 10 บาท</p>
+                </div>
+
+                <!-- Weight Scale -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 md:col-span-2">
+                    <h4 class="font-bold text-lg mb-2 text-emerald-800">เครื่องชั่งน้ำหนักหยอดเหรียญ</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">รับประกัน อะไหล่ภายในตู้ 1 ปี ภายใน 1 เดือนนับจากวันที่ติดตั้ง ซ่อมฟรี เลย 1 เดือนขึ้นไป รอบศูนย์บริการ 10 กม. มีค่าบริการ ครั้งละ 200 บาท ได้รับบริการภายใน 3-7 วัน หลังได้รับแจ้ง เลย 10 กม.ขึ้นไป ทางบริษัทเก็บค่าน้ำมัน เพิ่ม กม. ละ 10 บาท ในกรณีหมดประกัน หรือว่าเลย 1 ปี มีค่าบริการครั้งละ 500 บาท รอบศูนย์บริการภายในระยะทาง 10 กม. ได้รับบริการภายใน 3-7 วัน หลังได้รับแจ้ง เลย 10 กม. ทางบริษัทเก็บค่าน้ำมัน เพิ่ม กม. ละ 10 บาท เงื่อนไขในการรับประกัน การรับประกันเครื่องมีระยะเวลากำหนดไว้ นับจากวันที่มีการติดตั้งและหมดระยะประกัน ยกเว้นการรับประกันคือ ไส้กรอง และเมมเบรน ทุกกรณี อุปกรณ์ที่เปลี่ยนใหม่ จะรับประกันต่อเนื่องในการประกันเดิมทันที เพื่อหมดระยะประกันที่ พร้อมกันกับการรับประกันเบื้องต้น</p>
+                </div>
+            </div>
+
+            <!-- Exception Section -->
+            <div class="p-6 border-2 border-slate-200 rounded-2xl">
+                <h4 class="font-bold text-xl text-red-700 mb-3">อาการที่นอกเหนือการรับประกันหรือยกเว้นการรับประกัน :</h4>
+                <ul class="list-disc pl-5 space-y-2 text-slate-600">
+                    <li>การถูกดัดแปลงผิดสภาพจากเดิม หรือเกิดจากภัยธรรมชาติ เช่นไฟไหม้,ฟ้าผ่า,น้ำท่วม</li>
+                    <li>ถูกน้ำจากการใช้ของลูกค้าเอง หรือลูกค้าของผู้ซื้อ</li>
+                    <li>ถูกงัดหรือขโมย หรือโจรกรรม</li>
+                    <li>ซื้อเครื่องต่อจากผู้อื่นมาอีกครั้ง</li>
+                    <li>จงใจทำให้เกิดการเสียหาย อุบัติเหตุ หรือจากการประมาท</li>
+                </ul>
+            </div>
+
+            <!-- After Warranty -->
+            <div class="p-6 bg-amber-50 border-l-4 border-amber-400 rounded-r-xl">
+                <h4 class="font-bold text-amber-900 mb-2">ในกรณีที่เครื่องมีปัญหาหลังจากหมดประกัน :</h4>
+                <p class="text-slate-700 text-sm leading-relaxed">อุปกรณ์ที่เปลี่ยนใหม่จะมีระยะประกันต่อเนื่อง 3 เดือน นับจากวันที่ทำการเปลี่ยนอะไหล่ (รับประกันในส่วนของอะไหล่ที่ทำการเปลี่ยนเท่านั้น ) และ PCBเครื่องซักผ้า จะมีระยะประกัน 1 เดือน นับจากวันที่ทำการเปลี่ยน แจ้งซ่อมผ่านทางช่างไม่ว่าเป็นผู้ใดก็ตามโดยไม่แจ้งเข้าที่บริษัทโดยตรง ทางบริษัทจะไม่รับ ผิดชอบในกรณีใดทั้งสิ้น แม้ช่างจะเป็นช่างของบริษัทก็ตาม และทางบริษัทจะถือว่าช่างจะมี ความผิดร้ายแรงและต้องถูกบทลงโทษ ตามกฎของบริษัทอีกด้วย หลังจาก 1 เดือน นับจากติดตั้งเสร็จหากมีปัญหากับ PCB ของเครื่องซักผ้า บริษัทไม่รับผิดชอบต่อความเสียหายทุกกรณี</p>
+            </div>
+        </div>
+
+        <!-- Image Link -->
+        <a href="contact3.html" class="block mt-10 overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 group">
+            <img src="Images/map.png" alt="แผนที่ศูนย์บริการ" class="w-full transform group-hover:scale-105 transition-transform duration-500">
+        </a>
+    </div>
+</div>
+
+        
+        <!-- Map Section -->
+        <div class="mt-8">
+            <a href="contact3.html" class="block transform transition hover:scale-[1.02]">
+            </a>
+        </div>
+    </div>
+</div>
+        
+<div id="shared-footer"></div>
+
+    <!-- Essential Interaction Scripting -->
+    <script>
+        // Toggle mobile menu display
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                icon.className = 'fa-solid fa-xmark text-xl'; // เปลี่ยนเป็นรูปกากบาท
+            } else {
+                menu.classList.add('hidden');
+                icon.className = 'fa-solid fa-bars text-xl'; // เปลี่ยนกลับเป็นสามขีด
+            }
+        }
+
+        // Profit estimation calculations
+        function calculateProfit() {
+            const pricePerRun = parseFloat(document.getElementById('calc-type').value);
+            const dailyUsage = parseInt(document.getElementById('calc-usage').value);
+            
+            // update usage label
+            document.getElementById('calc-usage-label').innerText = dailyUsage + ' ครั้ง';
+            
+            // Math for Estimations (Revenue is 30 Days based)
+            let rawMonthly = dailyUsage * pricePerRun * 30;
+            let rawYearly = rawMonthly * 12;
+
+            // format currency numbers for Thai Baht
+            const formattedMonthly = rawMonthly.toLocaleString('th-TH') + ' บาท';
+            const formattedYearly = rawYearly.toLocaleString('th-TH') + ' บาท';
+
+            // write output
+            document.getElementById('monthly-revenue').innerText = formattedMonthly;
+            document.getElementById('yearly-revenue').innerText = formattedYearly;
+        }
+
+        // Initialize profit calculations on page boot
+        window.onload = function() {
+            calculateProfit();
+        };
+    </script>
+    <script src="shared-layout.js"></script>
+</body>
+</html>

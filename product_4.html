@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตู้น้ำมันหยอดเหรียญ | S&B Electronic Service</title>
+    <meta name="description" content="ศูนย์รวมธุรกิจหยอดเหรียญ ตู้น้ำ ตู้น้ำมัน เครื่องซักผ้า ตู้เติมเงิน ราคาเดียวกันทั่วประเทศ ดูแลโดยมืออาชีพ">
+    
+    <!-- Tailwind CSS for Modern & Responsive Layouts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts: Prompt & Inter for high-end typography -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Prompt', 'Inter', sans-serif;
+            background-color: #f8fafc;
+            scroll-behavior: smooth;
+        }
+
+        /* Smooth Custom Transitions */
+        .hover-scale {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .hover-scale:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px -10px rgba(5, 150, 105, 0.3);
+        }
+
+        /* Glassmorphism utility */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Standard Dropdown Custom Styles for Desktop */
+        @media (min-width: 1024px) {
+            .dropdown-hover:hover .dropdown-menu {
+                display: block;
+                animation: fadeIn 0.2s ease-out;
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            deep: '#0f172a',
+                            navy: '#1e3a8a',
+                            blue: '#3b82f6',
+                            emerald: '#059669',
+                            mint: '#10b981',
+                            teal: '#0d9488',
+                            gold: '#f59e0b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="text-slate-800 antialiased min-h-screen flex flex-col">
+
+    <!-- Premium Header Area -->
+    <div id="shared-header"></div>
+    
+</head>
+
+    <header class="py-16 px-4 bg-gradient-to-b from-slate-100 to-white">
+        <div class="max-w-4xl mx-auto text-center">
+<h2 class="text-3xl md:text-5xl font-extrabold mt-4 mb-6 leading-tight">
+        เป็นเจ้าของปั๊มน้ำมันชุมชน <br> <span class="text-primary">สร้างกำไร 24 ชั่วโมง</span> ⛽️
+            </h2>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto">เริ่มต้นธุรกิจเสือนอนกิน ด้วยตู้น้ำมันหยอดเหรียญอัตโนมัติ มาตรฐานสูง คืนทุนไว ตอบโจทย์พื้นที่ชุมชนและหน้าร้าน</p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <!-- Image Side -->
+            <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+            <a href="https://page.line.me/sbservice"><img src="Images/oil.jpg" alt="ตู้น้ำมัน" class="relative rounded-xl w-full shadow-lg"></a> </div>
+
+            <!-- Content Side -->
+            <div class="space-y-6">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="bg-amber-100 text-amber-700 px-4 py-2 rounded-lg font-bold">โปรโมชั่นพิเศษ!</div>
+                        <span class="text-slate-400 line-through text-lg">59,000.-</span>
+                        <span class="text-primary text-3xl font-black">49,000.-</span>
+                    </div>
+
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-primary mt-1"></i>
+                            <span><strong>ขนาดกระทัดรัด:</strong> 80 × 80 × 210 ซม. ประหยัดพื้นที่</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-primary mt-1"></i>
+                            <span><strong>ความจุ:</strong> รองรับสูงสุด 200 ลิตร</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-primary mt-1"></i>
+                            <span><strong>ระบบอัจฉริยะ:</strong> รับเหรียญ/ธนบัตร แม่นยำ พร้อมระบบเสียง</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <section class="mt-16 bg-white p-8 rounded-3xl border border-slate-100 shadow-md">
+            <h3 class="text-2xl font-bold mb-6 text-center">คำนวณรายได้ต่อเดือน</h3>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div>
+                    <label class="block text-sm font-medium mb-2">ประเภทน้ำมัน</label>
+                    <select id="calc-type" onchange="calculateProfit()" class="w-full p-3 border rounded-lg">
+                        <option value="5">ดีเซล (กำไร 5 บาท/ลิตร)</option>
+                        <option value="8">เบนซิน (กำไร 8 บาท/ลิตร)</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-2">ยอดเติมเฉลี่ยต่อวัน (<span id="calc-usage-label">20 ครั้ง</span>)</label>
+                    <input type="range" id="calc-usage" min="5" max="100" value="20" oninput="calculateProfit()" class="w-full">
+                </div>
+                <div class="bg-primary/10 p-4 rounded-xl text-center">
+                    <p class="text-sm text-primary font-bold">คาดการณ์รายได้รายเดือน</p>
+                    <p id="monthly-revenue" class="text-2xl font-black text-primary">0 บาท</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-900 text-white py-12 mt-12">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h4 class="text-xl font-bold mb-4">พร้อมเริ่มต้นธุรกิจกับเราหรือยัง?</h4>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="tel:0849125571" class="bg-white text-slate-900 px-8 py-3 rounded-full font-bold hover:bg-slate-200">
+                    <i class="fas fa-phone mr-2"></i> โทร: 084-912-5571
+                </a>
+                <a href="https://line.me/R/ti/p/%40ioa4439m" class="border border-white/20 px-8 py-3 rounded-full font-bold hover:bg-white/10">
+                    <i class="fab fa-line mr-2"></i> LINE: @sbservice
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function calculateProfit() {
+            const pricePerRun = parseFloat(document.getElementById('calc-type').value);
+            const dailyUsage = parseInt(document.getElementById('calc-usage').value);
+            
+            document.getElementById('calc-usage-label').innerText = dailyUsage + ' ครั้ง';
+            
+            // Assuming average fill per run is 5 Liters for simplicity
+            let monthlyProfit = dailyUsage * 5 * pricePerRun * 30;
+            
+            document.getElementById('monthly-revenue').innerText = monthlyProfit.toLocaleString('th-TH') + ' บาท';
+        }
+
+        // Initialize
+        window.onload = calculateProfit;
+    </script>
+        
+<div id="shared-footer"></div>
+
+    <!-- Essential Interaction Scripting -->
+    <script>
+        // Toggle mobile menu display
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                icon.className = 'fa-solid fa-xmark text-xl'; // เปลี่ยนเป็นรูปกากบาท
+            } else {
+                menu.classList.add('hidden');
+                icon.className = 'fa-solid fa-bars text-xl'; // เปลี่ยนกลับเป็นสามขีด
+            }
+        }
+
+        // Profit estimation calculations
+        function calculateProfit() {
+            const pricePerRun = parseFloat(document.getElementById('calc-type').value);
+            const dailyUsage = parseInt(document.getElementById('calc-usage').value);
+            
+            // update usage label
+            document.getElementById('calc-usage-label').innerText = dailyUsage + ' ครั้ง';
+            
+            // Math for Estimations (Revenue is 30 Days based)
+            let rawMonthly = dailyUsage * pricePerRun * 30;
+            let rawYearly = rawMonthly * 12;
+
+            // format currency numbers for Thai Baht
+            const formattedMonthly = rawMonthly.toLocaleString('th-TH') + ' บาท';
+            const formattedYearly = rawYearly.toLocaleString('th-TH') + ' บาท';
+
+            // write output
+            document.getElementById('monthly-revenue').innerText = formattedMonthly;
+            document.getElementById('yearly-revenue').innerText = formattedYearly;
+        }
+
+        // Initialize profit calculations on page boot
+        window.onload = function() {
+            calculateProfit();
+        };
+    </script>
+    <script src="shared-layout.js"></script>
+</body>
+</html>
