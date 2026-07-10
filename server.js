@@ -99,7 +99,7 @@ async function initializeStore() {
     await saveStore();
     const credentialText = [
       "ข้อมูลเข้าสู่ระบบหลังบ้านครั้งแรก",
-      "URL: http://127.0.0.1:" + PORT + "/admin",
+      "URL: http://0.0.0.1:" + PORT + "/admin",
       "Username: " + store.admin.username,
       "Password: " + initialPassword,
       "",
