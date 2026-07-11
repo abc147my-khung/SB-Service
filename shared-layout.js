@@ -312,7 +312,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const img6 = branchTarget.getAttribute('data-img-6') || 'Images/Ro3.jpg';
     const img7 = branchTarget.getAttribute('data-img-7') || 'Images/sb_service_new_brochure.png';
     const img8 = branchTarget.getAttribute('data-img-8') || 'Images/SSS.png';
-    const img9 = branchTarget.getAttribute('data-img-8') || 'Images/oil.jpg';
+    const img9 = branchTarget.getAttribute('data-img-9') || 'Images/oil.jpg';
+    const img10 = branchTarget.getAttribute('data-img-10) || 'Images/sbservice_ad_1x1.png';
     // 3. Populate dynamic regional presentation grid and action cards
     branchTarget.innerHTML = `
       <section class="relative bg-gradient-to-r from-blue-900 via-indigo-950 to-slate-900 text-white py-16 px-4 overflow-hidden border-b border-teal-500/20">
@@ -420,9 +421,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <div class="w-full overflow-hidden group relative rounded-xl shadow-lg bg-slate-950">
       <a href="product_5.html" class="block w-full h-full">
-        <img src="${Images/sbservice_ad_1x1.png}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/sbservice_ad_1x1.png';">
+        <img src="${img10}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/sbservice_ad_1x1.png';">
         <div class="absolute bottom-4 left-4 bg-black/70 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm tracking-wide z-10">
-          ภาพที่ 8: ตู้ล้างรถหยอดเหรียญ
+          ภาพที่ 10: ตู้ล้างรถหยอดเหรียญ
         </div>
       </a>
   </div>
