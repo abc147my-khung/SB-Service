@@ -152,7 +152,6 @@ document.addEventListener('DOMContentLoaded', function() {
       const locationInfo = branchTarget.getAttribute('data-location') || `ในพื้นที่จังหวัด${province}และใกล้เคียง`;
       const specificZone = branchTarget.getAttribute('data-specific-zone') || `สำหรับลูกค้าในตัวเมือง${province}`;
 
-      // ปรับปรุงระบบ Fallback: รองรับทั้งแบบระบุขีด (data-img-X) และไม่มีขีด (data-imgX) เพื่อความปลอดภัยสูงสุด
       const img1 = branchTarget.getAttribute('data-img-1') || branchTarget.getAttribute('data-img1') || 'Images/sb_service_updated.png';
       const img2 = branchTarget.getAttribute('data-img-2') || branchTarget.getAttribute('data-img2') || 'Images/sb_service_updated1.jpg';
       const img3 = branchTarget.getAttribute('data-img-3') || branchTarget.getAttribute('data-img3') || 'Images/sb_service_updated2.jpg';
