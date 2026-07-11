@@ -89,12 +89,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 </span>
               </div>
             </a>
-<img 
-  src="Images/logo_3d_transparent.png" 
-  alt="S&B Logo" 
-  class="object-contain max-h-20 w-auto" 
-  onerror="this.onerror=null; this.src='Images/logo_3d_transparent.png';" 
-/>
+            <img 
+              src="Images/logo_3d_transparent.png" 
+              alt="S&B Logo" 
+              class="object-contain max-h-20 w-auto" 
+              onerror="this.onerror=null; this.src='Images/logo_3d_transparent.png';" 
+            />
             <!-- Contact & Action Button -->
             <div class="hidden md:flex items-center gap-6">
               <div class="text-right">
@@ -313,7 +313,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const img7 = branchTarget.getAttribute('data-img-7') || 'Images/sb_service_new_brochure.png';
     const img8 = branchTarget.getAttribute('data-img-8') || 'Images/SSS.png';
     const img9 = branchTarget.getAttribute('data-img-9') || 'Images/oil.jpg';
-    const img10 = branchTarget.getAttribute('data-img-10) || 'Images/sbservice_ad_1x1.png';
+    const img10 = branchTarget.getAttribute('data-img-10') || 'Images/sbservice_ad_1x1.png';
+
     // 3. Populate dynamic regional presentation grid and action cards
     branchTarget.innerHTML = `
       <section class="relative bg-gradient-to-r from-blue-900 via-indigo-950 to-slate-900 text-white py-16 px-4 overflow-hidden border-b border-teal-500/20">
@@ -335,99 +336,101 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
       </section>
 
-    <section class="w-full bg-slate-900 py-8 px-4 sm:px-6 md:px-8">
-  <div class="max-w-7xl mx-auto flex flex-col gap-10">
-    
-    <div class="w-full overflow-hidden group relative rounded-xl shadow-lg bg-slate-950">
-      <a href="index.html" class="block w-full h-full">
-        <img src="${img1}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/sb_service_updated.png';">
-        <div class="absolute bottom-4 left-4 bg-black/70 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm tracking-wide z-10">
-          ภาพที่ 1: S&B Electronic Service
-        </div>
-      </a>
-    </div>
+      <section class="w-full bg-slate-900 py-8 px-4 sm:px-6 md:px-8">
+        <div class="max-w-7xl mx-auto flex flex-col gap-10">
+          
+          <div class="w-full overflow-hidden group relative rounded-xl shadow-lg bg-slate-950">
+            <a href="index.html" class="block w-full h-full">
+              <img src="${img1}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/sb_service_updated.png';">
+              <div class="absolute bottom-4 left-4 bg-black/70 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm tracking-wide z-10">
+                ภาพที่ 1: S&B Electronic Service
+              </div>
+            </a>
+          </div>
 
-    <div class="w-full overflow-hidden group relative rounded-xl shadow-lg bg-slate-950">
-      <a href="product_1.html" class="block w-full h-full">
-        <img src="${img2}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/sb_service_updated1.jpg';">
-        <div class="absolute bottom-4 left-4 bg-black/70 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm tracking-wide z-10">
-          ภาพที่ 2: เครื่องซักผ้าหยอดเหรียญฝาบน
-        </div>
-      </a>
-    </div>
+          <div class="w-full overflow-hidden group relative rounded-xl shadow-lg bg-slate-950">
+            <a href="product_1.html" class="block w-full h-full">
+              <img src="${img2}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/sb_service_updated1.jpg';">
+              <div class="absolute bottom-4 left-4 bg-black/70 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm tracking-wide z-10">
+                ภาพที่ 2: เครื่องซักผ้าหยอดเหรียญฝาบน
+              </div>
+            </a>
+          </div>
 
-    <div class="w-full overflow-hidden group relative rounded-xl shadow-lg bg-slate-950">
-      <a href="product_1.html" class="block w-full h-full">
-        <img src="${img3}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/sb_service_updated2.jpg';">
-        <div class="absolute bottom-4 left-4 bg-black/70 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm tracking-wide z-10">
-          ภาพที่ 3: เครื่องซักผ้าหยอดเหรียญฝาหน้า
-        </div>
-      </a>
-    </div>
+          <div class="w-full overflow-hidden group relative rounded-xl shadow-lg bg-slate-950">
+            <a href="product_1.html" class="block w-full h-full">
+              <img src="${img3}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/sb_service_updated2.jpg';">
+              <div class="absolute bottom-4 left-4 bg-black/70 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm tracking-wide z-10">
+                ภาพที่ 3: เครื่องซักผ้าหยอดเหรียญฝาหน้า
+              </div>
+            </a>
+          </div>
 
-    <div class="w-full overflow-hidden group relative rounded-xl shadow-lg bg-slate-950">
-      <a href="product_1.html" class="block w-full h-full">
-        <img src="${img4}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/sb_service_updated3.jpg';">
-        <div class="absolute bottom-4 left-4 bg-black/70 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm tracking-wide z-10">
-          ภาพที่ 4: เครื่องซักผ้าหยอดเหรียญกึ่งอุตสาหกรรม
-        </div>
-      </a>
-    </div>
+          <div class="w-full overflow-hidden group relative rounded-xl shadow-lg bg-slate-950">
+            <a href="product_1.html" class="block w-full h-full">
+              <img src="${img4}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/sb_service_updated3.jpg';">
+              <div class="absolute bottom-4 left-4 bg-black/70 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm tracking-wide z-10">
+                ภาพที่ 4: เครื่องซักผ้าหยอดเหรียญกึ่งอุตสาหกรรม
+              </div>
+            </a>
+          </div>
 
-    <div class="w-full overflow-hidden group relative rounded-xl shadow-lg bg-slate-950">
-      <a href="product_1.html" class="block w-full h-full">
-        <img src="${img5}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/sb_service_updated4.jpg';">
-        <div class="absolute bottom-4 left-4 bg-black/70 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm tracking-wide z-10">
-          ภาพที่ 5: เครื่องอบผ้าหยอดเหรียญ WHIRLPOOL
-        </div>
-      </a>
-    </div>
+          <div class="w-full overflow-hidden group relative rounded-xl shadow-lg bg-slate-950">
+            <a href="product_1.html" class="block w-full h-full">
+              <img src="${img5}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/sb_service_updated4.jpg';">
+              <div class="absolute bottom-4 left-4 bg-black/70 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm tracking-wide z-10">
+                ภาพที่ 5: เครื่องอบผ้าหยอดเหรียญ WHIRLPOOL
+              </div>
+            </a>
+          </div>
 
-    <div class="w-full overflow-hidden group relative rounded-xl shadow-lg bg-slate-950">
-      <a href="product_2.html" class="block w-full h-full">
-        <img src="${img6}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/Ro3.jpg';">
-        <div class="absolute bottom-4 left-4 bg-black/70 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm tracking-wide z-10">
-          ภาพที่ 6: ตู้น้ำดื่มหยอดเหรียญ ขนาดถังเก็บ 100 ลิตร
-        </div>
-      </a>
-    </div>
+          <div class="w-full overflow-hidden group relative rounded-xl shadow-lg bg-slate-950">
+            <a href="product_2.html" class="block w-full h-full">
+              <img src="${img6}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/Ro3.jpg';">
+              <div class="absolute bottom-4 left-4 bg-black/70 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm tracking-wide z-10">
+                ภาพที่ 6: ตู้น้ำดื่มหยอดเหรียญ ขนาดถังเก็บ 100 ลิตร
+              </div>
+            </a>
+          </div>
 
-    <div class="w-full overflow-hidden group relative rounded-xl shadow-lg bg-slate-950">
-      <a href="product_2.html" class="block w-full h-full">
-        <img src="${img7}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/sb_service_new_brochure.png';">
-        <div class="absolute bottom-4 left-4 bg-black/70 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm tracking-wide z-10">
-          ภาพที่ 7: ตู้น้ำดื่มหยอดเหรียญ ขนาดถังเก็บ 200 ลิตร
-        </div>
-      </a>
-    </div>
+          <div class="w-full overflow-hidden group relative rounded-xl shadow-lg bg-slate-950">
+            <a href="product_2.html" class="block w-full h-full">
+              <img src="${img7}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/sb_service_new_brochure.png';">
+              <div class="absolute bottom-4 left-4 bg-black/70 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm tracking-wide z-10">
+                ภาพที่ 7: ตู้น้ำดื่มหยอดเหรียญ ขนาดถังเก็บ 200 ลิตร
+              </div>
+            </a>
+          </div>
 
-      <div class="w-full overflow-hidden group relative rounded-xl shadow-lg bg-slate-950">
-      <a href="product_3.html" class="block w-full h-full">
-        <img src="${img8}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/SSS.png';">
-        <div class="absolute bottom-4 left-4 bg-black/70 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm tracking-wide z-10">
-          ภาพที่ 8: ธุรกิจร้านสะดวกซัก
-        </div>
-      </a>
-    </div>
+          <div class="w-full overflow-hidden group relative rounded-xl shadow-lg bg-slate-950">
+            <a href="product_3.html" class="block w-full h-full">
+              <img src="${img8}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/SSS.png';">
+              <div class="absolute bottom-4 left-4 bg-black/70 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm tracking-wide z-10">
+                ภาพที่ 8: ธุรกิจร้านสะดวกซัก
+              </div>
+            </a>
+          </div>
 
-      <div class="w-full overflow-hidden group relative rounded-xl shadow-lg bg-slate-950">
-      <a href="product_4.html" class="block w-full h-full">
-        <img src="${img9}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/oil.jpg';">
-        <div class="absolute bottom-4 left-4 bg-black/70 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm tracking-wide z-10">
-          ภาพที่ 9: ตู้น้ำมันหยอดเหรียญ
-        </div>
-      </a>
-    </div>
+          <div class="w-full overflow-hidden group relative rounded-xl shadow-lg bg-slate-950">
+            <a href="product_4.html" class="block w-full h-full">
+              <img src="${img9}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/oil.jpg';">
+              <div class="absolute bottom-4 left-4 bg-black/70 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm tracking-wide z-10">
+                ภาพที่ 9: ตู้น้ำมันหยอดเหรียญ
+              </div>
+            </a>
+          </div>
 
-        <div class="w-full overflow-hidden group relative rounded-xl shadow-lg bg-slate-950">
-      <a href="product_5.html" class="block w-full h-full">
-        <img src="${img10}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/sbservice_ad_1x1.png';">
-        <div class="absolute bottom-4 left-4 bg-black/70 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm tracking-wide z-10">
-          ภาพที่ 10: ตู้ล้างรถหยอดเหรียญ
+          <div class="w-full overflow-hidden group relative rounded-xl shadow-lg bg-slate-950">
+            <a href="product_5.html" class="block w-full h-full">
+              <img src="${img10}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/sbservice_ad_1x1.png';">
+              <div class="absolute bottom-4 left-4 bg-black/70 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm tracking-wide z-10">
+                ภาพที่ 10: ตู้ล้างรถหยอดเหรียญ
+              </div>
+            </a>
+          </div>
+
         </div>
-      </a>
-  </div>
-</section>
+      </section>
 
       <section class="max-w-6xl mx-auto px-4 py-16">
         <div class="bg-gradient-to-br from-white to-slate-50 border border-slate-100 rounded-3xl shadow-xl p-8 md:p-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
