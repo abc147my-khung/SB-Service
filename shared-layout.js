@@ -304,12 +304,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const specificZone = branchTarget.getAttribute('data-specific-zone') || `สำหรับลูกค้าในตัวเมือง${province}`;
 
     // 2. Fallbacks for dynamic product images (Hero banners)
-    const img1 = branchTarget.getAttribute('data-img-1') || 'Images/15.png';
-    const img2 = branchTarget.getAttribute('data-img-2') || 'Images/16.png';
-    const img3 = branchTarget.getAttribute('data-img-3') || 'Images/17.png';
-    const img4 = branchTarget.getAttribute('data-img-4') || 'Images/18.png';
-    const img5 = branchTarget.getAttribute('data-img-5') || 'Images/19.png';
-
+    const img1 = branchTarget.getAttribute('data-img-1') || 'Images/sb_service_updated.png';
+    const img2 = branchTarget.getAttribute('data-img-2') || 'Images/sb_service_updated1.jpg';
+    const img3 = branchTarget.getAttribute('data-img-3') || 'Images/sb_service_updated2.jpg';
+    const img4 = branchTarget.getAttribute('data-img-4') || 'Images/sb_service_updated3.jpg';
+    const img5 = branchTarget.getAttribute('data-img-5') || 'Images/sb_service_updated4.jpg';
+    const img6 = branchTarget.getAttribute('data-img-6') || 'Images/Ro3.jpg';
+    const img7 = branchTarget.getAttribute('data-img-7') || 'Images/sb_service_new_brochure.png';
+    const img8 = branchTarget.getAttribute('data-img-8') || 'Images/SSS.png';
+    const img9 = branchTarget.getAttribute('data-img-8') || 'Images/oil.jpg';
     // 3. Populate dynamic regional presentation grid and action cards
     branchTarget.innerHTML = `
       <section class="relative bg-gradient-to-r from-blue-900 via-indigo-950 to-slate-900 text-white py-16 px-4 overflow-hidden border-b border-teal-500/20">
@@ -336,7 +339,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     <div class="w-full overflow-hidden group relative rounded-xl shadow-lg bg-slate-950">
       <a href="index.html" class="block w-full h-full">
-        <img src="${Images/sb_service_updated.png}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/sb_service_updated.png';">
+        <img src="${img1}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/sb_service_updated.png';">
         <div class="absolute bottom-4 left-4 bg-black/70 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm tracking-wide z-10">
           ภาพที่ 1: S&B Electronic Service
         </div>
@@ -345,7 +348,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <div class="w-full overflow-hidden group relative rounded-xl shadow-lg bg-slate-950">
       <a href="product_1.html" class="block w-full h-full">
-        <img src="${Images/sb_service_updated1.jpg}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/sb_service_updated1.jpg';">
+        <img src="${img2}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/sb_service_updated1.jpg';">
         <div class="absolute bottom-4 left-4 bg-black/70 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm tracking-wide z-10">
           ภาพที่ 2: เครื่องซักผ้าหยอดเหรียญฝาบน
         </div>
@@ -354,7 +357,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <div class="w-full overflow-hidden group relative rounded-xl shadow-lg bg-slate-950">
       <a href="product_1.html" class="block w-full h-full">
-        <img src="${Images/sb_service_updated2.jpg}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/sb_service_updated2.jpg';">
+        <img src="${img3}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/sb_service_updated2.jpg';">
         <div class="absolute bottom-4 left-4 bg-black/70 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm tracking-wide z-10">
           ภาพที่ 3: เครื่องซักผ้าหยอดเหรียญฝาหน้า
         </div>
@@ -363,7 +366,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <div class="w-full overflow-hidden group relative rounded-xl shadow-lg bg-slate-950">
       <a href="product_1.html" class="block w-full h-full">
-        <img src="${Images/sb_service_updated3.jpg}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/sb_service_updated3.jpg';">
+        <img src="${img4}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/sb_service_updated3.jpg';">
         <div class="absolute bottom-4 left-4 bg-black/70 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm tracking-wide z-10">
           ภาพที่ 4: เครื่องซักผ้าหยอดเหรียญกึ่งอุตสาหกรรม
         </div>
@@ -372,7 +375,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <div class="w-full overflow-hidden group relative rounded-xl shadow-lg bg-slate-950">
       <a href="product_1.html" class="block w-full h-full">
-        <img src="${Images/sb_service_updated4.jpg}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/sb_service_updated4.jpg';">
+        <img src="${img5}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/sb_service_updated4.jpg';">
         <div class="absolute bottom-4 left-4 bg-black/70 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm tracking-wide z-10">
           ภาพที่ 5: เครื่องอบผ้าหยอดเหรียญ WHIRLPOOL
         </div>
@@ -381,7 +384,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <div class="w-full overflow-hidden group relative rounded-xl shadow-lg bg-slate-950">
       <a href="product_2.html" class="block w-full h-full">
-        <img src="${Images/Ro3.jpg}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/Ro3.jpg';">
+        <img src="${img6}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/Ro3.jpg';">
         <div class="absolute bottom-4 left-4 bg-black/70 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm tracking-wide z-10">
           ภาพที่ 6: ตู้น้ำดื่มหยอดเหรียญ ขนาดถังเก็บ 100 ลิตร
         </div>
@@ -390,27 +393,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <div class="w-full overflow-hidden group relative rounded-xl shadow-lg bg-slate-950">
       <a href="product_2.html" class="block w-full h-full">
-        <img src="${Images/sb_service_new_brochure.png}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/sb_service_new_brochure.png';">
+        <img src="${img7}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/sb_service_new_brochure.png';">
         <div class="absolute bottom-4 left-4 bg-black/70 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm tracking-wide z-10">
-          ภาพที่ 6: ตู้น้ำดื่มหยอดเหรียญ ขนาดถังเก็บ 200 ลิตร
+          ภาพที่ 7: ตู้น้ำดื่มหยอดเหรียญ ขนาดถังเก็บ 200 ลิตร
         </div>
       </a>
     </div>
 
       <div class="w-full overflow-hidden group relative rounded-xl shadow-lg bg-slate-950">
       <a href="product_3.html" class="block w-full h-full">
-        <img src="${Images/SSS.png}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/SSS.png';">
+        <img src="${img8}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/SSS.png';">
         <div class="absolute bottom-4 left-4 bg-black/70 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm tracking-wide z-10">
-          ภาพที่ 7: ธุรกิจร้านสะดวกซัก
+          ภาพที่ 8: ธุรกิจร้านสะดวกซัก
         </div>
       </a>
     </div>
 
       <div class="w-full overflow-hidden group relative rounded-xl shadow-lg bg-slate-950">
       <a href="product_4.html" class="block w-full h-full">
-        <img src="${Images/oil.jpg}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/oil.jpg';">
+        <img src="${img9}" alt="S&B Electronic Service ${province}" class="w-full h-auto block object-contain transition-transform duration-700 group-hover:scale-[1.015]" onerror="this.onerror=null; this.src='Images/oil.jpg';">
         <div class="absolute bottom-4 left-4 bg-black/70 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm tracking-wide z-10">
-          ภาพที่ 8: ตู้น้ำมันหยอดเหรียญ
+          ภาพที่ 9: ตู้น้ำมันหยอดเหรียญ
         </div>
       </a>
     </div>
